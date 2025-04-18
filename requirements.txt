@@ -1,3 +1,5 @@
-pip install
-pip update
-tensorflow==25.00.1
+streamlit
+tensorflow==2.13.0
+numpy
+pandas
+scikit-learn
