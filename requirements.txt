@@ -1,1 +1,3 @@
+pip install
+pip update
 tensorflow==25.00.1
