@@ -10,6 +10,21 @@ from keras.models import Model, Sequential
 from keras.layers import Input, Dense, Embedding, GRU, LSTM, Bidirectional, Dropout, Activation, TimeDistributed, RepeatVector
 from keras.optimizers import Adam
 from keras.losses import sparse_categorical_crossentropy
+import streamlit as st
+
+st.title("English to French Translation")
+
+input_text = st.text_input("Enter an English sentence:")
+
+if input_text:
+    # Preprocess the input and get the prediction
+    input_sequence = preprocess_input(input_text)
+    prediction = model.predict(input_sequence)
+
+    # Convert logits to text (translation)
+    translated_text = logits_to_text(prediction, french_tokenizer)
+
+    st.write(f"Predicted French translation: {translated_text}")
 
 def load_data(path):
   input_file = path
