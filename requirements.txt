@@ -1,6 +1,6 @@
 pip install --upgrade pip
 streamlit==1.29.0
-tensorflow==2.16.0
+tensorflow==2.16.1
 numpy
 pandas
 scikit-learn
