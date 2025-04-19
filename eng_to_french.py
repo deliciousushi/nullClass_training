@@ -32,8 +32,8 @@ def load_data(path):
     data = f.read()
   return data.split('\n')
 
-english_sentence = load_data('/content/small_vocab_en.csv')
-french_sentence = load_data('/content/small_vocab_fr.csv')
+english_sentence = load_data('small_vocab_en.csv')
+french_sentence = load_data('small_vocab_fr.csv')
 
 english_sentence[1]
 print(french_sentence[1])
