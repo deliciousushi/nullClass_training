@@ -4,7 +4,7 @@ import numpy as np
 import json
 import tensorflow as tf
 from tensorflow import keras
-from keras.preprocessing.text import Tokenizer
+from tensorflow.keras.preprocessing.text import Tokenizer
 from keras.utils import pad_sequences
 from keras.models import Model, Sequential
 from keras.layers import Input, Dense, Embedding, GRU, LSTM, Bidirectional, Dropout, Activation, TimeDistributed, RepeatVector
