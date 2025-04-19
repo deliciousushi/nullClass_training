@@ -17,7 +17,7 @@ class CustomEmbedding(KerasEmbedding):
 
 # ✅ Load model with custom layers
 model = load_model(
-    'english_to_french_model.keras',
+    'english_to_french_model.h5',
     custom_objects={
         'GRU': GRU,
         'Bidirectional': Bidirectional,
