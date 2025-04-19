@@ -6,7 +6,7 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 from tensorflow.keras.preprocessing.text import tokenizer_from_json
 
 # Load model
-model = load_model('english_to_french_model.h5')
+model = load_model('english_to_french_model.keras')
 
 # Load tokenizers
 with open('english_tokenizer.json', 'r', encoding='utf8') as f:
